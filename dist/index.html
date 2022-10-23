@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuel Calculator</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body
+    class="h-screen w-full bg-violet-700 overflow-x-hidden flex items-center justify-center"
+  >
+    <div
+      class="bg-white w-[400px] h-[400px] rounded-md flex flex-col items-center px-7 py-6 relative"
+    >
+      <header>
+        <h1 class="text-xl">Fuel Calculator</h1>
+      </header>
+      <main class="flex flex-col mt-10 w-full">
+        <label class="mb-2" for="route">route length (in kilometers)</label>
+        <input
+          type="number"
+          name="route"
+          id="route-length"
+          class="outline-none ring-2 ring-violet-700 rounded-md"
+        />
+        <label class="my-2" for="fuel-cons"
+          >avg fuel consumption per 100km (in liters)</label
+        >
+        <input
+          type="number"
+          name="fuel-cons"
+          id="fuel-cons"
+          class="outline-none ring-2 ring-violet-700 rounded-md"
+        />
+        <label class="my-2" for="fuel-price">fuel price per liter</label>
+        <input
+          type="number"
+          name="fuel-price"
+          id="fuel-price"
+          class="outline-none ring-2 ring-violet-700 rounded-md"
+        />
+      </main>
+      <button
+        id="btn"
+        onclick="calc()"
+        class="h-8 w-24 mt-7 outline-none bg-violet-700 text-white rounded-lg hover:border-2 hover:border-violet-700 hover:bg-white hover:text-violet-700 transition ease-in-out duration-300"
+      >
+        Submit
+      </button>
+      <p id="info" class="absolute bottom-2 text-center"></p>
+    </div>
+  </body>
+</html>
