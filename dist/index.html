@@ -12,7 +12,7 @@
     class="h-screen w-full bg-violet-700 overflow-x-hidden flex items-center justify-center"
   >
     <div
-      class="bg-white w-[400px] h-[400px] rounded-md flex flex-col items-center px-7 py-6 relative"
+      class="bg-white w-[400px] h-auto rounded-md flex flex-col items-center px-7 py-5 relative"
     >
       <header>
         <h1 class="text-xl">Fuel Calculator</h1>
@@ -45,11 +45,11 @@
       <button
         id="btn"
         onclick="calc()"
-        class="h-8 w-24 mt-7 outline-none bg-violet-700 text-white rounded-lg hover:border-2 hover:border-violet-700 hover:bg-white hover:text-violet-700 transition ease-in-out duration-300"
+        class="h-8 w-24 mt-7 mb-3 outline-none bg-violet-700 text-white rounded-lg hover:border-2 hover:border-violet-700 hover:bg-white hover:text-violet-700 transition ease-in-out duration-300"
       >
         Submit
       </button>
-      <p id="info" class="absolute bottom-2 text-center"></p>
+      <p id="info"></p>
     </div>
   </body>
 </html>
